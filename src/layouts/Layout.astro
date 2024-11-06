@@ -26,6 +26,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+
+  
 @keyframes typing {
   0% {
     width: 0;
@@ -43,14 +45,14 @@ const { title } = Astro.props;
     border-color: transparent;
   }
   50% {
-    border-color: rgb(255, 255, 255);
+    border-color: #bd3abf
   }
 }
 
 .typing-effect {
   overflow: hidden; /* Para ocultar el texto que no está dentro del ancho visible */
   white-space: nowrap; /* Evitar que el texto baje a la siguiente línea */
-  border-right: 2px solid rgb(255, 255, 255); /* El cursor que parpadea */
+  border-right: 2px solid #bd3abf; /* El cursor que parpadea */
   width: 0;
   animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
 }
